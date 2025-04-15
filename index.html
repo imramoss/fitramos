@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramos FIT</title>
+  <title>FitStyle - Início</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Lobster&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <div class="logo">Ramos FIT</div>
+    <div class="logo">FitStyle</div>
     <nav class="menu">
-      <a href="#">Shop</a>
-      <a href="#">Serviços</a>
-      <a href="#">Quem somos</a>
-      <a href="#">Contato</a>
-      <a href="#">Carrinho</a>
+      <button onclick="window.location.href='produtos.html?categoria=masculino'">Masculino</button>
+      <button onclick="window.location.href='produtos.html?categoria=feminino'">Feminino</button>
+      <button onclick="window.location.href='produtos.html?categoria=infantil'">Infantil</button>
+      <button onclick="window.location.href='produtos.html?categoria=ofertas'">Ofertas</button>
+      <button onclick="window.location.href='produtos.html?categoria=lancamentos'">Lançamentos</button>
+      <button onclick="window.location.href='carrinho.html'">Carrinho</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="overlay">
-      <h1>Apresente sua marca</h1>
-      <p>
-        Na Beleza, valorizamos a sofisticada interação entre saúde e estética. Nossa equipe de especialistas está empenhada em oferecer soluções inovadoras e personalizadas, sempre com um compromisso inabalável com a excelência em resultados.
-      </p>
-      <a href="#" class="btn">Saiba mais</a>
-    </div>
+  <section class="banners">
+    <div class="banner" id="banner1">Bem-vindo à FitStyle</div>
+    <div class="banner" id="banner2">Confira nossos Lançamentos</div>
+    <div class="banner" id="banner3">Ofertas Imperdíveis!</div>
   </section>
+
+  <section class="destaques">
+    <h2>Conheça nossos produtos</h2>
+    <button onclick="window.location.href='produtos.html'">Ver Produtos</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FitStyle. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
