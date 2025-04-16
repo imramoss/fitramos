@@ -94,3 +94,44 @@ body {
   text-align: center;
   padding: 15px;
 }
+.filtros {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.filtros form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.filtros select, .filtros button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filtros button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+
+.produto {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
