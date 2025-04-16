@@ -2,37 +2,65 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FitStyle - Início</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitPuma - Loja Oficial</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo">FitStyle</div>
-    <nav class="menu">
-      <button onclick="window.location.href='produtos.html?categoria=masculino'">Masculino</button>
-      <button onclick="window.location.href='produtos.html?categoria=feminino'">Feminino</button>
-      <button onclick="window.location.href='produtos.html?categoria=infantil'">Infantil</button>
-      <button onclick="window.location.href='produtos.html?categoria=ofertas'">Ofertas</button>
-      <button onclick="window.location.href='produtos.html?categoria=lancamentos'">Lançamentos</button>
-      <button onclick="window.location.href='carrinho.html'">Carrinho</button>
+  <header class="header">
+    <div class="logo">FitPuma</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Infantil</a></li>
+        <li><a href="#">Novidades</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </nav>
+    <div class="icons">
+      <a href="#"><img src="img/user-icon.png" alt="Perfil" /></a>
+      <a href="#"><img src="img/cart-icon.png" alt="Carrinho" /></a>
+    </div>
   </header>
 
-  <section class="banners">
-    <div class="banner" id="banner1">Bem-vindo à FitStyle</div>
-    <div class="banner" id="banner2">Confira nossos Lançamentos</div>
-    <div class="banner" id="banner3">Ofertas Imperdíveis!</div>
+  <section class="banner-carousel">
+    <div class="carousel">
+      <img src="img/banner1.jpg" alt="Banner 1" class="active">
+      <img src="img/banner2.jpg" alt="Banner 2">
+      <img src="img/banner3.jpg" alt="Banner 3">
+    </div>
   </section>
 
   <section class="destaques">
-    <h2>Conheça nossos produtos</h2>
-    <button onclick="window.location.href='produtos.html'">Ver Produtos</button>
+    <h2>Destaques da Semana</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/tenis1.jpg" alt="Tênis Puma">
+        <h3>Tênis Puma Running</h3>
+        <p>R$ 349,90</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="produto">
+        <img src="img/tenis2.jpg" alt="Tênis Puma Branco">
+        <h3>Puma White Classic</h3>
+        <p>R$ 299,90</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="produto">
+        <img src="img/camiseta1.jpg" alt="Camiseta Puma">
+        <h3>Camiseta Dry Masculina</h3>
+        <p>R$ 129,90</p>
+        <button>Ver Mais</button>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 FitStyle. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>&copy; 2025 FitPuma - Todos os direitos reservados</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
